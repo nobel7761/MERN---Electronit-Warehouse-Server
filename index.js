@@ -67,7 +67,7 @@ async function run() {
             res.send(result);
         })
 
-        //updating stock
+        //updating stock by using update stock button
         app.put('/updateStock/:id', async (req, res) => {
             const id = req.params.id;
             const updateInfo = req.body;
