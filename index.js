@@ -51,7 +51,7 @@ async function run() {
             res.send(products)
         })
 
-        //delivered product
+        //updating product quantity and sold using delivered button
         app.put('/product/:id', async (req, res) => {
             const id = req.params.id;
             const updateInfo = req.body;
